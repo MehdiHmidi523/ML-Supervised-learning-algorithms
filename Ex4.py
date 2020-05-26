@@ -120,11 +120,7 @@ x_test = x_full[sep:]
 y_test = y_full[sep:]
 
 
-mse_list = []
-acc_list = []
-time_list = []
-
-# create model
+# Create model
 model = Sequential()
 model.add(Dense(100, input_dim=784, activation='relu'))  # 100 neurons in the first hidden layer for the 784 input params
 model.add(Dense(10, activation='sigmoid'))
